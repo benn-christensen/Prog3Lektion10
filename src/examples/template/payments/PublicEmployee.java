@@ -12,12 +12,13 @@ public class PublicEmployee extends Employee{
 
     @Override
     protected double calculateHealthPlanDeductions() {
+
         return (super.salary - calculateRetirementDeductions()) * 0.13;
     }
 
     @Override
     protected double calculateOtherDeductions() {
-        if (super.salary < 100_000) {
+        if (super.salary > 100_000) {
             return 1000;
         }
         return 0;
