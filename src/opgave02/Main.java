@@ -8,7 +8,7 @@ public class Main {
         Team fcm = new Team("FCM");
         Team agf = new Team("AGF");
 
-        FootballTournament superliga = new FootballTournament("Superligaen");
+        Tournament superliga = new FootballTournament("Superligaen");
         superliga.addMatch(new FootballMatch(fck, bif, 2, 1));
         superliga.addMatch(new FootballMatch(fcm, agf, 1, 1));
         superliga.addMatch(new FootballMatch(bif, fcm, 0, 2));

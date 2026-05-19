@@ -1,6 +1,6 @@
 package opgave02;
 
-public class FootballMatch {
+public class FootballMatch implements Match{
     private Team homeTeam;
     private Team awayTeam;
     private int homeTeamGoals;
@@ -27,5 +27,10 @@ public class FootballMatch {
 
     public int getAwayTeamGoals() {
         return awayTeamGoals;
+    }
+
+    @Override
+    public boolean isOvertime() {
+        return false;
     }
 }
